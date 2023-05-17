@@ -15,5 +15,8 @@ Sanity Studio using vite@4.3.6 ready in 37157ms and running at http://localhost:
 ![image](https://github.com/chuls-hops/blog-chuls/assets/98098974/f59dc5d2-bba5-4c63-9d2a-29e9d9958f55)
 
 
+![image](https://github.com/chuls-hops/blog-chuls/assets/98098974/51606716-1583-45ba-8008-7344e30791c8)
+
+
 
 
