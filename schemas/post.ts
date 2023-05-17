@@ -9,6 +9,7 @@ export default defineType({
       name: 'title',
       title: 'Title',
       type: 'string',
+      validation: (Rule) => Rule.required()
     }),
     defineField({
       name: 'slug',
@@ -20,42 +21,65 @@ export default defineType({
       },
     }),
     defineField({
+      name: 'subtitle',
+      title: 'Sub Title',
+      type: 'string',
+      validation: (Rule) => Rule.required()
+    }),
+    defineField({
       name: 'author',
       title: 'Author',
       type: 'reference',
       to: {type: 'author'},
+      validation: (Rule) => Rule.required()
     }),
     defineField({
-      name: 'mainImage',
-      title: 'Main image',
+      name: 'content',
+      title: 'Content',
+      type: 'blockContent',
+      validation: (Rule) => Rule.required()
+    }),
+    defineField({
+      name: 'createdAt',
+      title: 'Created at',
+      type: 'datetime',
+      validation: (Rule) => Rule.required()
+    }),
+    defineField({
+      name: 'thumbnail',
+      title: 'Thumbnail',
       type: 'image',
       options: {
         hotspot: true,
       },
+      fields: [
+        {
+          name: 'alt',
+          type: 'string', 
+          title: 'alt', 
+          options: {
+            isHighlighted: true,
+          }, 
+          validation: (Rule) => Rule.required()                  
+        }
+      ],
+      validation: (Rule) => Rule.required()
     }),
     defineField({
-      name: 'categories',
-      title: 'Categories',
-      type: 'array',
-      of: [{type: 'reference', to: {type: 'category'}}],
+      name: 'tag',
+      title: 'Tag',
+      type: 'reference',
+      to: {type: 'tag'},
+      validation: (Rule) => Rule.required()
     }),
-    defineField({
-      name: 'publishedAt',
-      title: 'Published at',
-      type: 'datetime',
-    }),
-    defineField({
-      name: 'body',
-      title: 'Body',
-      type: 'blockContent',
-    }),
+
   ],
 
   preview: {
     select: {
       title: 'title',
       author: 'author.name',
-      media: 'mainImage',
+      media: 'thumbnail',
     },
     prepare(selection) {
       const {author} = selection
