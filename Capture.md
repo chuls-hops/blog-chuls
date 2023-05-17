@@ -10,6 +10,7 @@ G:\Admin\git\blog>npm run dev
 
 ✔ Checking configuration files...
 Sanity Studio using vite@4.3.6 ready in 37157ms and running at http://localhost:3333/
+<<<<<<< HEAD
 
 
 
@@ -36,3 +37,15 @@ Try building your studio app with 'sanity build' before starting the preview ser
 ? Do you want to start a development server instead? Yes
 ✔ Checking configuration files...
 Sanity Studio using vite@4.3.6 ready in 32075ms and running at http://localhost:3333/
+=======
+![image](https://github.com/chuls-hops/blog-chuls/assets/98098974/e3963ffa-9b45-49a6-bf31-c09d3d98281e)
+
+![image](https://github.com/chuls-hops/blog-chuls/assets/98098974/f59dc5d2-bba5-4c63-9d2a-29e9d9958f55)
+
+
+![image](https://github.com/chuls-hops/blog-chuls/assets/98098974/51606716-1583-45ba-8008-7344e30791c8)
+
+
+
+
+>>>>>>> a7c3213bdecfe5893617957d71785825e62a4219
